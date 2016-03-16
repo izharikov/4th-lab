@@ -35,7 +35,7 @@
             BlueprintIdentifier = "84C49DF81C98AE1C00DE544C"
             BuildableName = "4th lab"
             BlueprintName = "4th lab"
-            ReferencedContainer = "container:4th lab.xcodeproj">
+            ReferencedContainer = "container:4thlab.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "84C49DF81C98AE1C00DE544C"
             BuildableName = "4th lab"
             BlueprintName = "4th lab"
-            ReferencedContainer = "container:4th lab.xcodeproj">
+            ReferencedContainer = "container:4thlab.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

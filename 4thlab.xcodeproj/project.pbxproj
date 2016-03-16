@@ -8,12 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		846E25F31C9943D50015A70E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 846E25F21C9943D40015A70E /* libsqlite3.0.tbd */; };
-		846E25F61C9945C00015A70E /* insert.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E25F51C9945C00015A70E /* insert.c */; };
-		846E25FB1C99891B0015A70E /* delete.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E25FA1C99891B0015A70E /* delete.c */; };
-		846E25FD1C99898C0015A70E /* select.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E25FC1C99898C0015A70E /* select.c */; };
-		846E25FF1C9989AA0015A70E /* callback.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E25FE1C9989AA0015A70E /* callback.c */; };
-		846E26011C998D680015A70E /* parametrized.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E26001C998D680015A70E /* parametrized.c */; };
-		846E26031C99A7600015A70E /* photo.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E26021C99A7600015A70E /* photo.c */; };
+		846E26051C99AE000015A70E /* db_options.c in Sources */ = {isa = PBXBuildFile; fileRef = 846E26041C99AE000015A70E /* db_options.c */; };
 		84C49DFD1C98AE1C00DE544C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C49DFC1C98AE1C00DE544C /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -32,12 +27,7 @@
 /* Begin PBXFileReference section */
 		846E25F21C9943D40015A70E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		846E25F41C9944C20015A70E /* db_options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = db_options.h; sourceTree = "<group>"; };
-		846E25F51C9945C00015A70E /* insert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = insert.c; sourceTree = "<group>"; };
-		846E25FA1C99891B0015A70E /* delete.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = delete.c; sourceTree = "<group>"; };
-		846E25FC1C99898C0015A70E /* select.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = select.c; sourceTree = "<group>"; };
-		846E25FE1C9989AA0015A70E /* callback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = callback.c; sourceTree = "<group>"; };
-		846E26001C998D680015A70E /* parametrized.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parametrized.c; sourceTree = "<group>"; };
-		846E26021C99A7600015A70E /* photo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = photo.c; sourceTree = "<group>"; };
+		846E26041C99AE000015A70E /* db_options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = db_options.c; sourceTree = "<group>"; };
 		84C49DF91C98AE1C00DE544C /* 4th lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "4th lab"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C49DFC1C98AE1C00DE544C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				846E25F21C9943D40015A70E /* libsqlite3.0.tbd */,
-				84C49DFB1C98AE1C00DE544C /* 4th lab */,
+				84C49DFB1C98AE1C00DE544C /* 4th-lab */,
 				84C49DFA1C98AE1C00DE544C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,18 +61,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84C49DFB1C98AE1C00DE544C /* 4th lab */ = {
+		84C49DFB1C98AE1C00DE544C /* 4th-lab */ = {
 			isa = PBXGroup;
 			children = (
 				84C49DFC1C98AE1C00DE544C /* main.c */,
 				846E25F41C9944C20015A70E /* db_options.h */,
-				846E25F51C9945C00015A70E /* insert.c */,
-				846E25FA1C99891B0015A70E /* delete.c */,
-				846E25FC1C99898C0015A70E /* select.c */,
-				846E25FE1C9989AA0015A70E /* callback.c */,
-				846E26001C998D680015A70E /* parametrized.c */,
-				846E26021C99A7600015A70E /* photo.c */,
+				846E26041C99AE000015A70E /* db_options.c */,
 			);
+			name = "4th-lab";
 			path = "4th lab";
 			sourceTree = "<group>";
 		};
@@ -112,6 +98,9 @@
 		84C49DF11C98AE1C00DE544C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Admin;
 				TargetAttributes = {
@@ -120,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84C49DF41C98AE1C00DE544C /* Build configuration list for PBXProject "4th lab" */;
+			buildConfigurationList = 84C49DF41C98AE1C00DE544C /* Build configuration list for PBXProject "4thlab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -142,13 +131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846E25FB1C99891B0015A70E /* delete.c in Sources */,
-				846E25FD1C99898C0015A70E /* select.c in Sources */,
-				846E25F61C9945C00015A70E /* insert.c in Sources */,
-				846E26031C99A7600015A70E /* photo.c in Sources */,
 				84C49DFD1C98AE1C00DE544C /* main.c in Sources */,
-				846E25FF1C9989AA0015A70E /* callback.c in Sources */,
-				846E26011C998D680015A70E /* parametrized.c in Sources */,
+				846E26051C99AE000015A70E /* db_options.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +237,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84C49DF41C98AE1C00DE544C /* Build configuration list for PBXProject "4th lab" */ = {
+		84C49DF41C98AE1C00DE544C /* Build configuration list for PBXProject "4thlab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84C49DFE1C98AE1C00DE544C /* Debug */,

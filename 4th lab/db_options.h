@@ -21,10 +21,9 @@ void insertInTable(sqlite3 *, char*, char*);
 void selectFromTable(sqlite3 *, char*, char*);
 
 void deleteFromTable(sqlite3*, char*, char*);
-void doIt(char*, sqlite3*, char*);
 
-void param(sqlite3*, char*, char*);
-void getPhoto(sqlite3*, char*, char*);
+void parameterizedQuery(sqlite3*, char*, char*);
+void photoInFile(sqlite3*, char*, char*);
 int callback(void *, int , char **, char **);
 
 #endif

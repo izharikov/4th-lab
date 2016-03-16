@@ -31,13 +31,14 @@ int init(){
 }
 
 void showMenu(){
-    printf("Choose command: ");
     int choose = -1;
     printf("0.Select\n");
     printf("1.Insert\n");
     printf("2.Delete\n");
-    printf("3.Update\n");
-    printf("4.Execute parametrized query\n");
+    printf("3.Execute parameterized query\n");
+    printf("4.Photo in file\n");
+    printf("5.Exit\n");
+    printf("Choose command: ");
     scanf("%d", &choose);
     switch (choose) {
         case 0:
@@ -45,55 +46,21 @@ void showMenu(){
             break;
         case 1:
             insertInTable(db, sql, zErrMsg);
+            break;
         case 2:
             deleteFromTable(db, sql,zErrMsg);
             break;
+        case 3:
+            parameterizedQuery(db, sql, zErrMsg);
+            break;
+        case 4:
+            photoInFile(db, sql, zErrMsg);
+            break;
+        case 5:
+            return;
         default:
             break;
     }
+    showMenu();
 }
 
-/*
-static int callback(void *data, int argc, char **argv, char **azColName){
-    int i;
-    fprintf(stderr, "%s: ", (const char*)data);
-    for(i=0; i<argc; i++){
-        printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
-    }
-    printf("\n");
-    return 0;
-}
-
-
-int main(int argc, char* argv[])
-{
-    sqlite3 *db;
-    char *zErrMsg = 0;
-    int rc;
-    char *sql;
-    const char* data = "Callback function called";
-    
-    /* Open database */
-    /*rc = sqlite3_open("/Users/admin/Documents/4th lab/4th lab/empl.db", &db);
-    if( rc ){
-        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-        exit(0);
-    }else{
-        fprintf(stderr, "Opened database successfully\n");
-    }
-    
-    /* Create merged SQL statement */
-    /*sql = "DELETE from empl_table where ID=6; " \
-    "SELECT * from empl_table";
-    
-    /* Execute SQL statement */
-   /* rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-    if( rc != SQLITE_OK ){
-        fprintf(stderr, "SQL error: %s\n", zErrMsg);
-        sqlite3_free(zErrMsg);
-    }else{
-        fprintf(stdout, "Operation done successfully\n");
-    }
-    sqlite3_close(db);
-    return 0;
-}*/
