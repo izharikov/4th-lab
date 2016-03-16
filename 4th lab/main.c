@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 }
 
 int init(){
-    rc = sqlite3_open("/Users/admin/Documents/4th lab/4th lab/empl.db", &db);
+    rc = sqlite3_open("/Users/admin/4th-lab/4th lab/empl.db", &db);
     if ( !rc){
         return CONNECT_SUCCESS;
     }
